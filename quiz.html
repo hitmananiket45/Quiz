@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Time</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="logo.png" type="image">
+    </head> 
+<body>
+    <header>
+        <h1>Quiz Time!</h1>
+    </header>
+
+    <main>
+        <section class="quiz-container hidden">
+            <div id="timer" class="text-center">Time Left: <span id="time-left">30</span>s</div>
+            <div id="question-number" class="text-center"></div>
+            <div id="question" class="question text-center"></div>
+            <ul id="options" class="options"></ul>
+            <div class="navigation">
+                <button id="next-button" class="hidden">Next Question</button>
+            </div>
+            <div id="feedback" class="text-center hidden"></div>
+            <div id="progress" class="text-center"></div> <!-- New progress display -->
+        </section>
+
+        <section class="score-container hidden">
+            <h2 class="text-center">Your Score</h2>
+            <div id="final-score" class="final-score text-center"></div>
+            <div id="performance-message" class="performance-message text-center"></div>
+            <button id="restart-button" class="button">Restart Quiz</button>
+            <button id="highscores-button" class="button">Show Scores</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
